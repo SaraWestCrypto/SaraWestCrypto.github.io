@@ -14,15 +14,28 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Sara West Crypto
+subtitle: Everything Crypto! Blockchains, DeFi, Bitcoin, Ethereum and more...
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: SaraWestCrypto
+  Sara West Crypto is your go-to source for all things crypto!
+  From Bitcoin and Ethereum to DeFi and blockchain trends, I break down the latest in the crypto world — simple, insightful, and straight to the point.
+twitter_username: sarawestcrypto
 github_username: SaraWestCrypto
 minimal_mistakes_skin: default
 search: true
+
+# added settings
+# local: en-US
+lunr:
+  search_within_pages: true
+og_image: /assets/images/sara-west.jpg
+social:
+  type:  Person # Person or Organization (defaults to Person)
+  name:  # If the user or organization name differs from the site's name
+  links:
+    - "https://x.com/sarawestcrypto"
+    - "https://www.instagram.com/sarawestcrypto/"
+#    - "https://www.youtube.com/@SaraWestCrypto"
 
 # Build settings
 markdown: kramdown
@@ -31,7 +44,8 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+#timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Los_Angeles
 
 include:
   - _pages
@@ -59,33 +73,39 @@ plugins:
 
 author:
   name   : "Sara West"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  avatar : "/assets/images/sara-west.jpg"
+  location: "Los Angeles, CA"
+  bio    : >-
+    I'm a crypto enthusiast from Los Angeles.
+    Passionate about decentralization, DeFi, and the future of finance, I share insights, trends, and my journey in the crypto space.
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      icon: "fa-brands fa-x-twitter"
+      url: "https://x.com/sarawestcrypto"
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      icon: "fa-brands fa-instagram"
+      url: "https://www.instagram.com/sarawestcrypto/"
+#    - label: "Youtube"
+#      icon: "fa-brands fa-youtube"
+#      url: "https://www.youtube.com/@SaraWestCrypto"
+#    - label: "Website"
+#      icon: "fas fa-fw fa-link"
+#      url: "https://sarawestcrypto.github.io/"
 
 footer:
   links:
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      icon: "fa-brands fa-x-twitter"
+      url: "https://x.com/sarawestcrypto"
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      icon: "fa-brands fa-instagram"
+      url: "https://www.instagram.com/sarawestcrypto/"
+#    - label: "Youtube"
+#      icon: "fab fa-fw fa-youtube"
+#      url: "https://www.youtube.com/@SaraWestCrypto"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/"
 
 defaults:
   # _posts
@@ -96,7 +116,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      show_date: true
+#      comments: true
       share: true
       related: true
   # _pages
